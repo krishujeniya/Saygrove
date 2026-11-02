@@ -4,16 +4,16 @@
 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/krishujeniya/EchoNest-The-Social-Media-App)
-![GitHub contributors](https://img.shields.io/github/contributors/krishujeniya/EchoNest-The-Social-Media-App)
-![GitHub stars](https://img.shields.io/github/stars/krishujeniya/EchoNest-The-Social-Media-App?style=social)
-![GitHub forks](https://img.shields.io/github/forks/krishujeniya/EchoNest-The-Social-Media-App?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/krishujeniya/echonest-mobile)
+![GitHub contributors](https://img.shields.io/github/contributors/krishujeniya/echonest-mobile)
+![GitHub stars](https://img.shields.io/github/stars/krishujeniya/echonest-mobile?style=social)
+![GitHub forks](https://img.shields.io/github/forks/krishujeniya/echonest-mobile?style=social)
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/krishujeniya/EchoNest-The-Social-Media-App">
+  <a href="https://github.com/krishujeniya/echonest-mobile">
     <img src="assets/iw.png" alt="Logo" width="200px">
   </a>
 
@@ -22,14 +22,14 @@
   <p align="center">
     A powerful and user-friendly social media application to connect and share.
     <br />
-    <a href="https://github.com/krishujeniya/EchoNest-The-Social-Media-App"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/krishujeniya/echonest-mobile"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/krishujeniya/EchoNest-The-Social-Media-App">View Demo</a>
+    <a href="https://github.com/krishujeniya/echonest-mobile">View Demo</a>
     ·
-    <a href="https://github.com/krishujeniya/EchoNest-The-Social-Media-App/issues">Report Bug</a>
+    <a href="https://github.com/krishujeniya/echonest-mobile/issues">Report Bug</a>
     ·
-    <a href="https://github.com/krishujeniya/EchoNest-The-Social-Media-App/issues">Request Feature</a>
+    <a href="https://github.com/krishujeniya/echonest-mobile/issues">Request Feature</a>
   </p>
 </div>
 
@@ -93,8 +93,8 @@ To get a local copy up and running, follow these steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/krishujeniya/EchoNest-The-Social-Media-App.git
-   cd EchoNest-The-Social-Media-App
+   git clone https://github.com/krishujeniya/echonest-mobile.git
+   cd echonest-mobile
    ```
 2. Install dependencies
    ```sh
@@ -122,4 +122,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [Open Source Community](https://opensource.org/)
-* [Contributors](https://github.com/krishujeniya/EchoNest-The-Social-Media-App/graphs/contributors)
+* [Contributors](https://github.com/krishujeniya/echonest-mobile/graphs/contributors)
