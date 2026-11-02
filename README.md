@@ -1,3 +1,5 @@
+[![Download APK](https://img.shields.io/github/v/release/krishujeniya/echonest-mobile?color=blue&label=Download%20APK&logo=android)](https://github.com/krishujeniya/echonest-mobile/releases/latest)
+
 <a id="readme-top"></a>
 
 
