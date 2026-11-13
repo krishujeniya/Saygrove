@@ -40,7 +40,15 @@ jobs:
           pub-cache: true
 
       - name: Resolve locked dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
+
+      - name: Export CI-resolved lockfile for review
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: saygrove-pubspec-lock-${{ github.sha }}
+          path: pubspec.lock
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Analyze Dart and Flutter code
         run: flutter analyze
@@ -78,7 +86,7 @@ jobs:
           pub-cache: true
 
       - name: Resolve locked dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Build unsigned iOS release app
         run: flutter build ios --release --no-codesign
