@@ -83,7 +83,7 @@ Saygrove is a Flutter social app for sharing posts and media, chatting, and stay
 
 `main` is the repository's sole maintained branch. GitHub Actions runs for pull requests targeting `main`, pushes to `main`, and manual runs. It enforces `pubspec.lock`, runs `flutter analyze` and `flutter test`, then builds an Android validation APK and an unsigned iOS app bundle. Successful artifacts are available from the run for 14 days. The APK uses the debug signing key; neither artifact is store-ready.
 
-Dependabot checks Pub packages and GitHub Actions weekly. Each update pull request triggers the same CI workflow.
+Automated dependency pull requests are disabled so the repository keeps only `main`. Dependency updates must land on `main` and pass this GitHub Actions workflow.
 
 ## Firebase CLI
 
