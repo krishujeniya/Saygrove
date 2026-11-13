@@ -1,14 +1,14 @@
 // ignore_for_file: file_names, library_private_types_in_public_api, unused_field
 
-import 'package:echonest/Models/Activity.dart';
-import 'package:echonest/Services/DB.dart';
+import 'package:saygrove/Models/Activity.dart';
+import 'package:saygrove/Services/DB.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Screens/Home.dart';
-import 'package:echonest/Screens/Notification.dart';
-import 'package:echonest/Screens/Profile.dart';
-import 'package:echonest/Screens/Chat.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Screens/Home.dart';
+import 'package:saygrove/Screens/Notification.dart';
+import 'package:saygrove/Screens/Profile.dart';
+import 'package:saygrove/Screens/Chat.dart';
 
 class Feed extends StatefulWidget {
   final String currentUserId;

@@ -4,11 +4,11 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Echo.dart';
-import 'package:echonest/Services/DB.dart';
-import 'package:echonest/Services/FBStorage.dart';
-import 'package:echonest/Component/SwipeB.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Echo.dart';
+import 'package:saygrove/Services/DB.dart';
+import 'package:saygrove/Services/FBStorage.dart';
+import 'package:saygrove/Component/SwipeB.dart';
 
 class NewEcho extends StatefulWidget {
   final String currentUserId;
@@ -45,7 +45,7 @@ class _NewEchoState extends State<NewEcho> {
         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Image.asset(
-          'assets/iw.png',
+          'assets/saygrove-mark.png',
           height: 40,
         ),
         backgroundColor: ThemeMainBG,

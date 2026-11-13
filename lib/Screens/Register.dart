@@ -1,12 +1,12 @@
 // ignore: duplicate_ignore
 // ignore: file_names
 // ignore_for_file: file_names, library_private_types_in_public_api, use_build_context_synchronously, avoid_print
-import 'package:echonest/Screens/Feed.dart';
+import 'package:saygrove/Screens/Feed.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
-import 'package:echonest/Services/Auth.dart';
-import 'package:echonest/Constants/Constants.dart';
+import 'package:saygrove/Services/Auth.dart';
+import 'package:saygrove/Constants/Constants.dart';
 
 
 class RegisterP extends StatefulWidget {
@@ -71,7 +71,7 @@ class _RegisterPState extends State<RegisterP> {
               children: [
                 const SizedBox(height: 30),
                 Image.asset(
-                  'assets/iw.png',
+                  'assets/saygrove-mark.png',
                   width: 200,
                   height: 200,
                 ),

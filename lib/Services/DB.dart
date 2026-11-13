@@ -2,10 +2,10 @@
 
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Activity.dart';
-import 'package:echonest/Models/Echo.dart';
-import 'package:echonest/Models/UserModel.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Activity.dart';
+import 'package:saygrove/Models/Echo.dart';
+import 'package:saygrove/Models/UserModel.dart';
 import 'package:flutter/material.dart';
 
 class DatabaseServices {

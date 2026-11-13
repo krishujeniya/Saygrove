@@ -4,10 +4,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/UserModel.dart';
-import 'package:echonest/Services/DB.dart';
-import 'package:echonest/Services/FBStorage.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/UserModel.dart';
+import 'package:saygrove/Services/DB.dart';
+import 'package:saygrove/Services/FBStorage.dart';
 
 const AssetImage placeholderImage = AssetImage('assets/placeholder.png');
 

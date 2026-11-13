@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "echonest" "\0"
+            VALUE "FileDescription", "Saygrove" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "echonest" "\0"
+            VALUE "InternalName", "Saygrove" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "echonest.exe" "\0"
-            VALUE "ProductName", "echonest" "\0"
+            VALUE "OriginalFilename", "saygrove.exe" "\0"
+            VALUE "ProductName", "Saygrove" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -2,9 +2,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
-import 'package:echonest/Services/Auth.dart';
-import 'package:echonest/Screens/Feed.dart';
-import 'package:echonest/Constants/Constants.dart';
+import 'package:saygrove/Services/Auth.dart';
+import 'package:saygrove/Screens/Feed.dart';
+import 'package:saygrove/Constants/Constants.dart';
 
 class Login extends StatefulWidget {
     final Function()? onTap;
@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
               children: [
                 const SizedBox(height: 30),
                 Image.asset(
-                  'assets/iw.png', // Replace with your logo asset path
+                  'assets/saygrove-mark.png', // Replace with your logo asset path
                   width: 200,
                   height: 200,
                 ),

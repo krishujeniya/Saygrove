@@ -2,14 +2,14 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Echo.dart';
-import 'package:echonest/Models/UserModel.dart';
-import 'package:echonest/Screens/EditProfile.dart';
-import 'package:echonest/Screens/Check.dart';
-import 'package:echonest/Services/DB.dart';
-import 'package:echonest/Services/Auth.dart';
-import 'package:echonest/Component/EchoView.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Echo.dart';
+import 'package:saygrove/Models/UserModel.dart';
+import 'package:saygrove/Screens/EditProfile.dart';
+import 'package:saygrove/Screens/Check.dart';
+import 'package:saygrove/Services/DB.dart';
+import 'package:saygrove/Services/Auth.dart';
+import 'package:saygrove/Component/EchoView.dart';
 
 class ProfileP extends StatefulWidget {
   final String currentUserId;

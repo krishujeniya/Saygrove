@@ -1,10 +1,10 @@
 // ignore_for_file: file_names, library_private_types_in_public_api, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Echo.dart';
-import 'package:echonest/Models/UserModel.dart';
-import 'package:echonest/Services/DB.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Echo.dart';
+import 'package:saygrove/Models/UserModel.dart';
+import 'package:saygrove/Services/DB.dart';
 
 class EchoView extends StatefulWidget {
   final Echo Echo_1;

@@ -1,10 +1,10 @@
 // ignore_for_file: file_names, library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Activity.dart';
-import 'package:echonest/Models/UserModel.dart';
-import 'package:echonest/Services/DB.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Activity.dart';
+import 'package:saygrove/Models/UserModel.dart';
+import 'package:saygrove/Services/DB.dart';
 
 class Notifications extends StatefulWidget {
   final String currentUserId;
@@ -79,7 +79,7 @@ title: Text(
         automaticallyImplyLeading: false,
 centerTitle: true, // Center the title
           title: Image.asset(
-            'assets/iw.png', // Replace with the actual path to your logo image in the assets
+            'assets/saygrove-mark.png', // Replace with the actual path to your logo image in the assets
             height: 40, // Adjust the height as needed
           ),        backgroundColor: ThemeMainBG,
       ),

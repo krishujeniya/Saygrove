@@ -1,35 +1,36 @@
-[![Download APK](https://img.shields.io/github/v/release/krishujeniya/echonest-mobile?color=blue&label=Download%20APK&logo=android)](https://github.com/krishujeniya/echonest-mobile/releases/latest)
+[![Download APK](https://img.shields.io/github/v/release/krishujeniya/Saygrove?color=blue&label=Download%20APK&logo=android)](https://github.com/krishujeniya/Saygrove/releases/latest)
+[![Flutter CI](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml)
 
 <a id="readme-top"></a>
 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/krishujeniya/echonest-mobile)
-![GitHub contributors](https://img.shields.io/github/contributors/krishujeniya/echonest-mobile)
-![GitHub stars](https://img.shields.io/github/stars/krishujeniya/echonest-mobile?style=social)
-![GitHub forks](https://img.shields.io/github/forks/krishujeniya/echonest-mobile?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/krishujeniya/Saygrove)
+![GitHub contributors](https://img.shields.io/github/contributors/krishujeniya/Saygrove)
+![GitHub stars](https://img.shields.io/github/stars/krishujeniya/Saygrove?style=social)
+![GitHub forks](https://img.shields.io/github/forks/krishujeniya/Saygrove?style=social)
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/krishujeniya/echonest-mobile">
-    <img src="assets/iw.png" alt="Logo" width="200px">
+  <a href="https://github.com/krishujeniya/Saygrove">
+    <img src="assets/saygrove-profile.png" alt="Saygrove logo" width="200px">
   </a>
 
-  <h3 align="center">EchoNest - The Social Media App</h3>
+  <h3 align="center">Saygrove — a social app for sharing moments</h3>
 
   <p align="center">
-    A powerful and user-friendly social media application to connect and share.
+    Share posts and media, chat with people, and keep up with your community.
     <br />
-    <a href="https://github.com/krishujeniya/echonest-mobile"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/krishujeniya/Saygrove"><strong>Explore the project »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/krishujeniya/echonest-mobile">View Demo</a>
+    <a href="https://github.com/krishujeniya/Saygrove">View project</a>
     ·
-    <a href="https://github.com/krishujeniya/echonest-mobile/issues">Report Bug</a>
+    <a href="https://github.com/krishujeniya/Saygrove/issues">Report Bug</a>
     ·
-    <a href="https://github.com/krishujeniya/echonest-mobile/issues">Request Feature</a>
+    <a href="https://github.com/krishujeniya/Saygrove/issues">Request Feature</a>
   </p>
 </div>
 
@@ -58,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-EchoNest is a feature-rich social media application designed to help users connect, share content, and interact in an engaging and user-friendly environment.
+Saygrove is a Flutter social app for sharing posts and media, chatting, and staying connected with a community.
 
 ### Key Features
 
@@ -76,43 +77,38 @@ EchoNest is a feature-rich social media application designed to help users conne
 - [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 - [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 
+## Continuous integration
+
+GitHub Actions is the project path for dependency resolution, analysis, tests, and builds. Pull requests to `main`, pushes to `main`, and manual runs enforce `pubspec.lock`, run `flutter analyze` and `flutter test`, and build Android and iOS outputs. Successful runs publish the APK and an unsigned iOS app bundle as downloadable artifacts for 14 days. The APK uses the debug signing key, so it is for validation and installation testing, not Play Store publishing.
+
+Dependabot checks Pub packages and GitHub Actions weekly. Each update pull request triggers the same CI workflow.
+
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running, follow these steps.
+Use the latest release to install the app. Project checks, dependency updates, and validation builds run through GitHub Actions.
 
 ### Prerequisites
 
-- **Dart**: Ensure you have the latest version of Dart installed. [Dart Installation Guide](https://dart.dev/get-dart)
-- **Flutter**: Ensure you have the latest version of Flutter installed. [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
+- **Android**: An Android device or emulator for the released APK.
 
 ### Installation
 
-1. Clone the repo
+1. Download and install the [latest Android release](https://github.com/krishujeniya/Saygrove/releases/latest).
+2. To inspect the source, clone the repo:
    ```sh
-   git clone https://github.com/krishujeniya/echonest-mobile.git
-   cd echonest-mobile
+   git clone https://github.com/krishujeniya/Saygrove.git
+   cd Saygrove
    ```
-2. Install dependencies
-   ```sh
-   flutter pub get
-   ```
-3. Run the app
-   ```sh
-   flutter run
-   ```
-4. Install App
-   ```sh
-   https://t.me/krishujeniya/2
-   ```
+3. Download validation builds from the **Artifacts** section of a successful [GitHub Actions run](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml).
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
@@ -122,4 +118,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [Open Source Community](https://opensource.org/)
-* [Contributors](https://github.com/krishujeniya/echonest-mobile/graphs/contributors)
+* [Contributors](https://github.com/krishujeniya/Saygrove/graphs/contributors)

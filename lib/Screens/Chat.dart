@@ -2,10 +2,10 @@
 
 import 'dart:convert';
 import 'package:dash_chat_2/dash_chat_2.dart';
-import 'package:echonest/Constants/Constants.dart';
+import 'package:saygrove/Constants/Constants.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:echonest/Models/UserModel.dart'; // Import UserModel
+import 'package:saygrove/Models/UserModel.dart'; // Import UserModel
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 
@@ -59,7 +59,7 @@ class _GeminiChatState extends State<GeminiChat> {
         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Image.asset(
-          'assets/iw.png',
+          'assets/saygrove-mark.png',
           height: 40,
         ),
         backgroundColor: ThemeMainBG,
@@ -134,7 +134,7 @@ class UserList extends StatelessWidget {
         centerTitle: true,
         backgroundColor: ThemeMainBG,
         title: Image.asset(
-          'assets/iw.png',
+          'assets/saygrove-mark.png',
           height: 40,
         ),
       ),
@@ -158,7 +158,7 @@ class UserList extends StatelessWidget {
               leading: const CircleAvatar(
                 radius: 20,
                 backgroundColor: ThemeMainBG,
-                backgroundImage: AssetImage('assets/iw.png'),
+                backgroundImage: AssetImage('assets/saygrove-mark.png'),
               ),
               title: const Text(
                 'My AI',

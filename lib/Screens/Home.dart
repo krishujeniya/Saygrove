@@ -1,14 +1,14 @@
 // ignore_for_file: file_names, library_private_types_in_public_api, non_constant_identifier_names
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:echonest/Screens/Profile.dart';
+import 'package:saygrove/Screens/Profile.dart';
 import 'package:flutter/material.dart';
-import 'package:echonest/Constants/Constants.dart';
-import 'package:echonest/Models/Echo.dart';
-import 'package:echonest/Models/UserModel.dart';
-import 'package:echonest/Screens/NewEcho.dart';
-import 'package:echonest/Services/DB.dart';
-import 'package:echonest/Component/EchoView.dart';
+import 'package:saygrove/Constants/Constants.dart';
+import 'package:saygrove/Models/Echo.dart';
+import 'package:saygrove/Models/UserModel.dart';
+import 'package:saygrove/Screens/NewEcho.dart';
+import 'package:saygrove/Services/DB.dart';
+import 'package:saygrove/Component/EchoView.dart';
 
 class Home extends StatefulWidget {
   final String currentUserId;
@@ -147,7 +147,7 @@ class _HomeState extends State<Home> {
         automaticallyImplyLeading: false,
         centerTitle: true, // Center the title
         title: Image.asset(
-          'assets/iw.png', // Replace with the actual path to your logo image in the assets
+          'assets/saygrove-mark.png', // Replace with the actual path to your logo image in the assets
           height: 40, // Adjust the height as needed
         ),
         backgroundColor: ThemeMainBG,
