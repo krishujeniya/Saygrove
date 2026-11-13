@@ -1,4 +1,3 @@
-[![Download APK](https://img.shields.io/github/v/release/krishujeniya/Saygrove?color=blue&label=Download%20APK&logo=android)](https://github.com/krishujeniya/Saygrove/releases/latest)
 [![Flutter CI](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml)
 
 <a id="readme-top"></a>
@@ -48,9 +47,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#validation-builds">Validation Builds</a></li>
       </ul>
     </li>
+    <li><a href="#firebase-cli">Firebase CLI</a></li>
+    <li><a href="#continuous-integration">Continuous Integration</a></li>
+    <li><a href="#production-and-releases">Production and Releases</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -79,9 +81,40 @@ Saygrove is a Flutter social app for sharing posts and media, chatting, and stay
 
 ## Continuous integration
 
-GitHub Actions is the project path for dependency resolution, analysis, tests, and builds. Pull requests to `main`, pushes to `main`, and manual runs enforce `pubspec.lock`, run `flutter analyze` and `flutter test`, and build Android and iOS outputs. Successful runs publish the APK and an unsigned iOS app bundle as downloadable artifacts for 14 days. The APK uses the debug signing key, so it is for validation and installation testing, not Play Store publishing.
+`main` is the repository's sole maintained branch. GitHub Actions runs for pull requests targeting `main`, pushes to `main`, and manual runs. It enforces `pubspec.lock`, runs `flutter analyze` and `flutter test`, then builds an Android validation APK and an unsigned iOS app bundle. Successful artifacts are available from the run for 14 days. The APK uses the debug signing key; neither artifact is store-ready.
 
 Dependabot checks Pub packages and GitHub Actions weekly. Each update pull request triggers the same CI workflow.
+
+## Firebase CLI
+
+The app uses the existing Firebase project `echonest-f282b`. `.firebaserc`, `lib/firebase_options.dart`, the Android config, and the iOS config point to this project. The Firebase app registrations and `com.example.echonest` application IDs are retained so the app continues to use its registered Firebase apps.
+
+Authenticate the Firebase CLI and confirm the project before running project commands:
+
+```sh
+firebase login
+firebase projects:list
+firebase use
+firebase apps:list --project echonest-f282b
+```
+
+To refresh the iOS native config, use the existing iOS app ID shown by `firebase apps:list`:
+
+```sh
+firebase apps:sdkconfig IOS "$IOS_FIREBASE_APP_ID" \
+  --project echonest-f282b \
+  --out ios/Runner/GoogleService-Info.plist
+```
+
+Do not create a new Firebase project or app just to change the Saygrove display name. The existing registered apps are connected to the current data project.
+
+## Production and releases
+
+Production publishing is not configured in this repository. The current workflow only creates validation artifacts: the Android APK uses the debug key and the iOS app bundle is unsigned. Do not use these artifacts to replace a Play Store or App Store release.
+
+The existing GitHub `v1.0.0` release is the older EchoNest APK, not a refreshed Saygrove build. A new production release requires Android release signing and store credentials, Apple distribution signing and App Store Connect credentials, and a release workflow that uses those credentials. Those credentials are not committed to the repository.
+
+The Firebase workflow does not deploy Firestore rules or data. The checked-in `firestore.rules` still contains an expired bootstrap rule, so it must be replaced with app-specific access rules and tested with the Firestore emulator before any production rules deployment. The app also uploads to Firebase Storage, but this repository does not configure Storage rules. These backend policies are production blockers; no production Firebase deployment was made during this rebrand.
 
 
 
@@ -89,21 +122,21 @@ Dependabot checks Pub packages and GitHub Actions weekly. Each update pull reque
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Use the latest release to install the app. Project checks, dependency updates, and validation builds run through GitHub Actions.
+Use GitHub Actions artifacts to review validation builds. The `v1.0.0` GitHub release predates the Saygrove rebrand and is not the current app build.
 
 ### Prerequisites
 
-- **Android**: An Android device or emulator for the released APK.
+- **Android**: An Android device or emulator for validation APKs.
+- **Firebase**: Access to the existing `echonest-f282b` project for app configuration.
 
-### Installation
+### Validation Builds
 
-1. Download and install the [latest Android release](https://github.com/krishujeniya/Saygrove/releases/latest).
+1. Open a successful [Flutter CI run](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml) and download its Android or iOS validation artifact.
 2. To inspect the source, clone the repo:
    ```sh
    git clone https://github.com/krishujeniya/Saygrove.git
    cd Saygrove
    ```
-3. Download validation builds from the **Artifacts** section of a successful [GitHub Actions run](https://github.com/krishujeniya/Saygrove/actions/workflows/flutter-ci.yml).
 
 <!-- LICENSE -->
 ## License

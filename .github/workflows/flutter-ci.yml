@@ -48,13 +48,13 @@ jobs:
       - name: Run tests
         run: flutter test --reporter expanded
 
-      - name: Build Android release APK
+      - name: Build Android validation APK (debug signed)
         run: flutter build apk --release
 
       - name: Upload Android build artifact
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: saygrove-android-${{ github.sha }}
+          name: saygrove-android-validation-${{ github.sha }}
           path: build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
           retention-days: 14
@@ -80,13 +80,13 @@ jobs:
       - name: Resolve locked dependencies
         run: flutter pub get --enforce-lockfile
 
-      - name: Build unsigned iOS release app
+      - name: Build unsigned iOS validation app
         run: flutter build ios --release --no-codesign
 
       - name: Upload unsigned iOS build artifact
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: saygrove-ios-${{ github.sha }}
+          name: saygrove-ios-validation-unsigned-${{ github.sha }}
           path: build/ios/iphoneos/Runner.app
           if-no-files-found: error
           retention-days: 14
