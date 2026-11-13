@@ -39,17 +39,17 @@ dependencies:
   flutter_svg: ^2.0.9
   dash_chat_2: ^0.0.19
   http: ^1.2.0
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.16.0
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
   google_sign_in: ^6.2.1
-  cloud_firestore: ^4.14.0
+  cloud_firestore: ^5.6.7
   image_picker: ^1.0.7
-  firebase_storage: ^11.6.0
+  firebase_storage: ^12.4.5
   flutter_image_compress: ^2.1.0
   path_provider: ^2.1.2
   uuid: ^4.3.3
   intl: ^0.18.1
-  firebase_messaging: ^14.8.2
+  firebase_messaging: ^15.2.5
   
 
 dev_dependencies:
