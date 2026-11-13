@@ -18,7 +18,7 @@ void main() {
     expect(echo.authorId, 'user-1');
     expect(echo.text, 'Hello from Saygrove');
     expect(echo.image, 'https://example.com/echo.jpg');
-    expect(echo.timestamp.toDate(), createdAt);
+    expect(echo.timestamp.toDate().toUtc(), createdAt);
     expect(echo.likes, 3);
   });
 }
