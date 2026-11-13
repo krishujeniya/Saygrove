@@ -112,7 +112,7 @@ Do not create a new Firebase project or app just to change the Saygrove display 
 
 Production publishing is not configured in this repository. The current workflow only creates validation artifacts: the Android APK uses the debug key and the iOS app bundle is unsigned. Do not use these artifacts to replace a Play Store or App Store release.
 
-The existing GitHub `v1.0.0` release is the older EchoNest APK, not a refreshed Saygrove build. A new production release requires Android release signing and store credentials, Apple distribution signing and App Store Connect credentials, and a release workflow that uses those credentials. Those credentials are not committed to the repository.
+The GitHub `v1.0.0` release now includes the current Saygrove validation artifacts built from `main` at commit `00e73057967fcdf0d29ae632cc409afb6a99fb62`, alongside the original EchoNest APK retained as a legacy asset. These current artifacts are not store-ready production builds. A signed production release requires Android release signing and store credentials, Apple distribution signing and App Store Connect credentials, and a release workflow that uses those credentials. Those credentials are not configured in the repository.
 
 The Firebase workflow does not deploy Firestore rules or data. The checked-in `firestore.rules` still contains an expired bootstrap rule, so it must be replaced with app-specific access rules and tested with the Firestore emulator before any production rules deployment. The app also uploads to Firebase Storage, but this repository does not configure Storage rules. These backend policies are production blockers; no production Firebase deployment was made during this rebrand.
 
@@ -122,7 +122,7 @@ The Firebase workflow does not deploy Firestore rules or data. The checked-in `f
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Use GitHub Actions artifacts to review validation builds. The `v1.0.0` GitHub release predates the Saygrove rebrand and is not the current app build.
+Use GitHub Actions artifacts or the `v1.0.0` GitHub release to review the current Saygrove validation APK and unsigned iOS app bundle. The release also retains the original pre-rebrand `ECHONEST.apk` as a legacy asset.
 
 ### Prerequisites
 
