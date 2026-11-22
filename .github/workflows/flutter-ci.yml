@@ -39,8 +39,8 @@ jobs:
           cache: true
           pub-cache: true
 
-      - name: Resolve locked dependencies
-        run: flutter pub upgrade flutter_plugin_android_lifecycle image_picker_android image_picker && flutter pub get
+      - name: Upgrade dependencies to latest compatible
+        run: flutter pub upgrade
 
       - name: Analyze Dart and Flutter code
         run: flutter analyze
@@ -77,8 +77,8 @@ jobs:
           cache: true
           pub-cache: true
 
-      - name: Resolve locked dependencies
-        run: flutter pub upgrade flutter_plugin_android_lifecycle image_picker_android image_picker && flutter pub get
+      - name: Upgrade dependencies to latest compatible
+        run: flutter pub upgrade
 
       - name: Build unsigned iOS release app
         run: flutter build ios --release --no-codesign
