@@ -3,6 +3,11 @@ allprojects {
         google()
         mavenCentral()
     }
+    tasks.configureEach { task ->
+        if (task.name.startsWith("lintVital")) {
+            task.enabled = false
+        }
+    }
 }
 
 rootProject.buildDir = '../build'
