@@ -17,4 +17,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://krishujeniya.github.io/Saygrove/sitemap.xml
+Sitemap: https://saygrove.pages.dev/sitemap.xml

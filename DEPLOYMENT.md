@@ -32,13 +32,13 @@ gh workflow run flutter-ci.yml --ref main
 gh run watch
 ```
 
-### Method B: Vercel Web Preview Deployment (CLI)
+### Method B: Cloudflare Pages Deployment (Web)
 ```bash
-# Deploy Flutter web build directory
-vercel build/web --prod
+# Deploy Flutter Web to Cloudflare Pages
+wrangler pages deploy build/web --project-name=saygrove --branch=main
 ```
 
-### Method C: Cloudflare Free Stack Deployment (CLI)
+### Method C: Cloudflare Storage & Distribution (CLI)
 ```bash
 # Deploy Flutter Web to Cloudflare Pages
 wrangler pages project create saygrove-web --production-branch=main
