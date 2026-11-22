@@ -32,3 +32,12 @@ ios/ServiceDefinitions.json
 # Crash dumps and operating-system files
 hs_err_pid*.log
 .DS_Store
+
+# Cloudflare & Secret Guardrails
+.env
+.env.local
+.env.*.local
+!.env.example
+.dev.vars
+.wrangler/
+.vercel/

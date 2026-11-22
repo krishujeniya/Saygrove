@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saygrove-web",
+  "compatibility_date": "2026-11-20",
+  "pages_build_output_dir": "build/web",
+  "kv_namespaces": [
+    {
+      "binding": "SHARED_CONFIG_KV",
+      "id": "f8b3339a3f154b29bb794f7f32a654ed"
+    }
+  ]
+}
