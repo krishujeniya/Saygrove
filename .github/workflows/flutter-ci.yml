@@ -40,7 +40,7 @@ jobs:
           pub-cache: true
 
       - name: Resolve locked dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Analyze Dart and Flutter code
         run: flutter analyze
@@ -78,7 +78,7 @@ jobs:
           pub-cache: true
 
       - name: Resolve locked dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Build unsigned iOS release app
         run: flutter build ios --release --no-codesign
