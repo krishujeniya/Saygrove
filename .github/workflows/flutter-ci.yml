@@ -58,35 +58,3 @@ jobs:
           path: build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
           retention-days: 14
-
-  build-ios:
-    name: Build iOS app
-    needs: validate-and-build
-    runs-on: macos-latest
-    timeout-minutes: 45
-
-    steps:
-      - name: Check out source
-        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
-        with:
-          channel: stable
-          flutter-version: '3.50.0'
-          cache: true
-          pub-cache: true
-
-      - name: Upgrade dependencies to latest compatible
-        run: flutter pub upgrade
-
-      - name: Build unsigned iOS release app
-        run: flutter build ios --release --no-codesign
-
-      - name: Upload unsigned iOS build artifact
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        with:
-          name: saygrove-ios-${{ github.sha }}
-          path: build/ios/iphoneos/Runner.app
-          if-no-files-found: error
-          retention-days: 14
