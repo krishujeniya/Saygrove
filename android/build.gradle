@@ -1,15 +1,3 @@
-buildscript {
-    ext.kotlin_version = '1.9.22'
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
 allprojects {
     repositories {
         google()
@@ -20,6 +8,34 @@ allprojects {
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    // Older Flutter plugins need namespace values from their Android manifests,
+    // and some FlutterFire versions still declare BuildConfig fields. AGP 9
+    // requires a namespace and disables BuildConfig for libraries by default.
+    plugins.withId('com.android.library') {
+        android {
+            if (namespace == null) {
+                def manifestFile = project.file('src/main/AndroidManifest.xml')
+                if (manifestFile.exists()) {
+                    def packageMatcher = manifestFile.getText('UTF-8') =~ /package=["']([^"']+)["']/
+                    if (packageMatcher.find()) {
+                        namespace = packageMatcher.group(1)
+                    }
+                }
+            }
+            buildFeatures {
+                buildConfig = true
+            }
+        }
+        androidComponents {
+            finalizeDsl { androidDsl ->
+                // Legacy plugins hard-code API 31 despite AndroidX requiring 34+.
+                androidDsl.compileSdk = 36
+            }
+        }
+    }
+
 }
 subprojects {
     project.evaluationDependsOn(':app')
